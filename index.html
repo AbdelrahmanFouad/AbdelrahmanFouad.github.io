@@ -6,11 +6,23 @@
 -->
 <html>
 	<head>
-		<title>Abdelrahman Fouad Portfolio</title>
+		<title>Abdelrahman Fouad — Digital Operations Engineer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Digital Operations Engineer specializing in Python automation, DDEX music distribution pipelines, AI tooling, and audio engineering. Cairo, Egypt." />
+		<meta name="keywords" content="Abdelrahman Fouad, Python, Automation, DDEX, Music Distribution, Digital Operations, AI, Streamlit" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.tech-tags { display: flex; flex-wrap: wrap; gap: 0.5em; margin-top: 1em; justify-content: center; }
+			.tech-tags span { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); padding: 0.3em 0.8em; border-radius: 2em; font-size: 0.75em; letter-spacing: 0.05em; text-transform: uppercase; white-space: nowrap; }
+			.stats-bar { display: flex; justify-content: center; gap: 3em; margin: 1.5em 0; flex-wrap: wrap; }
+			.stats-bar .stat { text-align: center; }
+			.stats-bar .stat .number { font-size: 2.2em; font-weight: 800; display: block; line-height: 1; }
+			.stats-bar .stat .label { font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7; }
+			#intro p { font-size: 1.1em; max-width: 40em; margin-left: auto; margin-right: auto; }
+			.project-meta { font-size: 0.8em; opacity: 0.6; margin-bottom: 0.5em; text-transform: uppercase; letter-spacing: 0.08em; }
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -19,9 +31,16 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>Abdelrahman Fouad<br />
-						Portfolio</h1>
-						<p>Data analyst well versed in SQL, Pyhton, Tableau and PowerBI<a href="https://www.linkedin.com/in/abdelrahman-fouad-854114298/"target="_blank"><br>@AbdelrahmanFouad</a>.</p>
+						<h1>Abdelrahman Fouad</h1>
+						<p>Digital Operations Engineer · Python Automation Architect · Audio Engineer</p>
+						<p style="font-size: 0.9em; opacity: 0.8; max-width: 36em; margin: 0 auto;">
+							I build Python tools that automate music distribution pipelines — turning 45-minute manual workflows into 2-minute automated runs, increasing team throughput by 300%.
+						</p>
+						<div class="stats-bar" style="margin-top: 2em;">
+							<div class="stat"><span class="number">300%</span><span class="label">Throughput Increase</span></div>
+							<div class="stat"><span class="number">500+</span><span class="label">UPCs / Week</span></div>
+							<div class="stat"><span class="number">10+</span><span class="label">Production Tools</span></div>
+						</div>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -35,113 +54,180 @@
 					<nav id="nav">
 						<ul class="links">
 							<li class="active"><a href="index.html">Projects</a></li>
-							
 						</ul>
 						<ul class="icons">
-							
-							<li><a href="https://github.com/AbdelrahmanFouad/Portfolio-projects/tree/main" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.linkedin.com/in/abdelrahman-fouad-854114298/"target="_blank" class="icon brands fa-linkedin"><span class="label">fa-linkedin</span></a></li>
+							<li><a href="https://github.com/AbdelrahmanFouad" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/abdelrahman-fouad-854114298/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:abderhmana@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Featured Post -->
+						<!-- Featured Post: DDEX Delivery Toolkit -->
 							<article class="post featured">
 								<header class="major">
-									
-									<h2><a href="https://github.com/AbdelrahmanFouad/Portfolio-projects/blob/main/Nashville%20housing%20data%20cleaning.sql"target="_blank">Data cleaning<br />
-									in SQL</a></h2>
-									<p>In this project we take raw housing data and transform
-										it in SQL Server to make it more usable for analysis.</p>
+									<span class="project-meta">End-to-End Automation Pipeline · 8 Scripts · 2,000+ Lines</span>
+									<h2><a href="https://github.com/AbdelrahmanFouad/ddex-delivery-toolkit" target="_blank">
+										DDEX Delivery<br />Toolkit</a></h2>
+									<p>A fully autonomous distribution pipeline — from a single CSV of track metadata to packaged DDEX ERN 3.8.2 deliveries across TikTok, YouTube Content ID, and Facebook. Includes genre-aware routing, Playwright-based Octolivery automation, and multi-format audio conversion.</p>
+									<div class="tech-tags">
+										<span>Python</span>
+										<span>Streamlit</span>
+										<span>DDEX ERN 3.8.2</span>
+										<span>Playwright</span>
+										<span>XML</span>
+										<span>FFmpeg</span>
+									</div>
 								</header>
-								<a href="https://github.com/AbdelrahmanFouad/Portfolio-projects/blob/main/Nashville%20housing%20data%20cleaning.sql"target="_blank" class="image main"><img src="images/housing.jpg" alt="" /></a>
+								<a href="https://github.com/AbdelrahmanFouad/ddex-delivery-toolkit" target="_blank" class="image main"><img src="images/pic01.jpg" alt="DDEX Delivery Toolkit" /></a>
 								<ul class="actions special">
-									<li><a href="https://github.com/AbdelrahmanFouad/Portfolio-projects/blob/main/Nashville%20housing%20data%20cleaning.sql"target="_blank" class="button large">view project</a></li>
+									<li><a href="https://github.com/AbdelrahmanFouad/ddex-delivery-toolkit" target="_blank" class="button large">View on GitHub</a></li>
 								</ul>
 							</article>
 
-						<!-- Posts -->
+						<!-- Project Grid -->
 							<section class="posts">
-								<article>
-									<header>
-										
-										<h2><a href="https://github.com/AbdelrahmanFouad/Portfolio-projects/blob/main/covid%20data%20exploration%20sql%20project.sql"target="_blank">COVID 19
-											DATA EXPLORATION<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/AbdelrahmanFouad/Portfolio-projects/blob/main/covid%20data%20exploration%20sql%20project.sql"target="_blank" class="image fit"><img src="images/covid.jpg" alt="" /></a>
-									<p>In this project we use SQL Server to explore global COVID 19 data.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/AbdelrahmanFouad/Portfolio-projects/blob/main/covid%20data%20exploration%20sql%20project.sql"target="_blank" class="button">view project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="https://github.com/AbdelrahmanFouad/Portfolio-projects/blob/main/Amazon%20web%20scraper.ipynb"target="_blank">Amazon web scraper using pyhton<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/AbdelrahmanFouad/Portfolio-projects/blob/main/Amazon%20web%20scraper.ipynb"target="_blank" class="image fit"><img src="images/amazon.jpg" alt="" /></a>
-									<p>In this project we scrape data from Amazon to analyze price data for products.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/AbdelrahmanFouad/Portfolio-projects/blob/main/Amazon%20web%20scraper.ipynb"target="_blank" class="button">view project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="https://public.tableau.com/app/profile/abdelrahman.fouad/viz/TableauportfolioprojectairBnB/Dashboard1"target="_blank">Tbaleau AirBnB Dashboard<br />
-										</a></h2>
-									</header>
-									<a href="https://public.tableau.com/app/profile/abdelrahman.fouad/viz/TableauportfolioprojectairBnB/Dashboard1" target="_blank"class="image fit"><img src="images/tableau.jpg" alt="" /></a>
-									<p>In this project we look at properties in different zipcodes and visualize their price changes over time as well as other details</p>
-									<ul class="actions special">
-										<li><a href="https://public.tableau.com/app/profile/abdelrahman.fouad/viz/TableauportfolioprojectairBnB/Dashboard1" target="_blank"class="button">view project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="https://github.com/AbdelrahmanFouad/Portfolio-projects/blob/main/Crypto%20api.ipynb"target="_blank">Coinmarketcap api web scraper using python<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/AbdelrahmanFouad/Portfolio-projects/blob/main/Crypto%20api.ipynb"target="_blank" class="image fit"><img src="images/crypto.png" alt="" /></a>
-									<p>In this project we look at different cryptocurrencies and analyse price changes over time pulling data periodically using the API</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/AbdelrahmanFouad/Portfolio-projects/blob/main/Crypto%20api.ipynb"target="_blank" class="button">view project</a></li>
-									</ul>
-								</article>
-								
-							</section>
 
-						
-							
+								<!-- Excelerate -->
+								<article>
+									<header>
+										<span class="project-meta">Live App · AI-Powered</span>
+										<h2><a href="https://github.com/AbdelrahmanFouad/SpreadsheetAI" target="_blank">
+											Excelerate<br />AI Data Analyst</a></h2>
+									</header>
+									<a href="https://github.com/AbdelrahmanFouad/SpreadsheetAI" target="_blank" class="image fit"><img src="images/pic02.jpg" alt="Excelerate" /></a>
+									<p>Upload any CSV/Excel and transform data using natural language. Two-stage prompt refinement with Google Gemini, preview before commit, dual export. Deployed on Streamlit Community Cloud.</p>
+									<div class="tech-tags">
+										<span>Gemini AI</span>
+										<span>PandasAI</span>
+										<span>Streamlit</span>
+									</div>
+									<ul class="actions special">
+										<li><a href="https://github.com/AbdelrahmanFouad/SpreadsheetAI" target="_blank" class="button">GitHub</a></li>
+										<li><a href="https://spreadsheetai.streamlit.app" target="_blank" class="button">Live App</a></li>
+									</ul>
+								</article>
+
+								<!-- Media Batch Downloader -->
+								<article>
+									<header>
+										<span class="project-meta">4 Tools · Parallel Processing</span>
+										<h2><a href="https://github.com/AbdelrahmanFouad/media-batch-downloader" target="_blank">
+											Media Batch<br />Downloader</a></h2>
+									</header>
+									<a href="https://github.com/AbdelrahmanFouad/media-batch-downloader" target="_blank" class="image fit"><img src="images/pic03.jpg" alt="Media Batch Downloader" /></a>
+									<p>Production-grade parallel batch downloader for YouTube, Udio, Facebook & Instagram Reels. Retry logic with exponential backoff, multi-format audio conversion (MP3/FLAC/WAV), thumbnail processing, and manifest tracking.</p>
+									<div class="tech-tags">
+										<span>yt-dlp</span>
+										<span>Playwright</span>
+										<span>FFmpeg</span>
+										<span>Threading</span>
+									</div>
+									<ul class="actions special">
+										<li><a href="https://github.com/AbdelrahmanFouad/media-batch-downloader" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+
+								<!-- SRT AI Translator -->
+								<article>
+									<header>
+										<span class="project-meta">Live App · AI Translation</span>
+										<h2><a href="https://github.com/AbdelrahmanFouad/subtitle-editor" target="_blank">
+											SRT AI Translator<br />EN → AR</a></h2>
+									</header>
+									<a href="https://github.com/AbdelrahmanFouad/subtitle-editor" target="_blank" class="image fit"><img src="images/pic04.jpg" alt="SRT AI Translator" /></a>
+									<p>Subtitle editor with English→Arabic AI translation using Google Gemini. Multi-key rotation, model fallback chain (3 models), batch processing of 12 blocks per API call, inline editing, and rate limit handling.</p>
+									<div class="tech-tags">
+										<span>Gemini AI</span>
+										<span>Streamlit</span>
+										<span>NLP</span>
+									</div>
+									<ul class="actions special">
+										<li><a href="https://github.com/AbdelrahmanFouad/subtitle-editor" target="_blank" class="button">GitHub</a></li>
+										<li><a href="https://subtitle-editor.streamlit.app" target="_blank" class="button">Live App</a></li>
+									</ul>
+								</article>
+
+								<!-- Music Catalog Tools -->
+								<article>
+									<header>
+										<span class="project-meta">6-Tool Suite · Catalog Ops</span>
+										<h2><a href="https://github.com/AbdelrahmanFouad/music-catalog-tools" target="_blank">
+											Music Catalog<br />Tools</a></h2>
+									</header>
+									<a href="https://github.com/AbdelrahmanFouad/music-catalog-tools" target="_blank" class="image fit"><img src="images/pic05.jpg" alt="Music Catalog Tools" /></a>
+									<p>Six battle-tested Python utilities for music catalog operations: DSP data transformer, UPC/ISRC file organizer, DDEX packager, Anghami ID scraper, YouTube metadata enricher, and FLAC duration extractor.</p>
+									<div class="tech-tags">
+										<span>Pandas</span>
+										<span>Selenium</span>
+										<span>FFmpeg</span>
+									</div>
+									<ul class="actions special">
+										<li><a href="https://github.com/AbdelrahmanFouad/music-catalog-tools" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+
+								<!-- YouTube Asset Tools -->
+								<article>
+									<header>
+										<span class="project-meta">API Integration · Content ID</span>
+										<h2><a href="https://github.com/AbdelrahmanFouad/youtube-asset-tools" target="_blank">
+											YouTube Asset<br />Tools</a></h2>
+									</header>
+									<a href="https://github.com/AbdelrahmanFouad/youtube-asset-tools" target="_blank" class="image fit"><img src="images/pic06.jpg" alt="YouTube Asset Tools" /></a>
+									<p>Resolve YouTube Content ID asset IDs to video URLs using the YouTube Data API v3. Two-pass verification (Search API → Snippet confirmation), batch CSV processing, and quota-aware rate limiting.</p>
+									<div class="tech-tags">
+										<span>YouTube API</span>
+										<span>Requests</span>
+										<span>Pandas</span>
+									</div>
+									<ul class="actions special">
+										<li><a href="https://github.com/AbdelrahmanFouad/youtube-asset-tools" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+
+								<!-- CSV Flask -->
+								<article>
+									<header>
+										<span class="project-meta">Web App · Data Analysis</span>
+										<h2><a href="https://github.com/AbdelrahmanFouad/csv-flask" target="_blank">
+											CSV Correlator<br />Web App</a></h2>
+									</header>
+									<a href="https://github.com/AbdelrahmanFouad/csv-flask" target="_blank" class="image fit"><img src="images/pic07.jpg" alt="CSV Flask" /></a>
+									<p>Flask web application for uploading two CSV files and finding correlations, matches, and discrepancies between datasets. Built for cross-referencing music catalog data across different DSP platforms.</p>
+									<div class="tech-tags">
+										<span>Flask</span>
+										<span>Pandas</span>
+										<span>HTML/CSS</span>
+									</div>
+									<ul class="actions special">
+										<li><a href="https://github.com/AbdelrahmanFouad/csv-flask" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+							</section>
 
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
-						
-							
-	
+
 						<section class="split contact">
-							
+
 							<section>
-								<h3>Phone</h3>
-								<p><a href="#">+201009324393</a></p>
+								<h3>Location</h3>
+								<p>Cairo, Egypt 🇪🇬</p>
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">abderhmana@gmail.com</a></p>
+								<p><a href="mailto:abderhmana@gmail.com">abderhmana@gmail.com</a></p>
 							</section>
 							<section>
 								<h3>Social</h3>
 								<ul class="icons alt">
-									
-									<li><a href="https://github.com/AbdelrahmanFouad/Portfolio-projects/tree/main"target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://www.linkedin.com/in/abdelrahman-fouad-854114298/"target="_blank" class="icon brands fa-linkedin"><span class="label">fa-linkedin</span></a></li>
+									<li><a href="https://github.com/AbdelrahmanFouad" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/abdelrahman-fouad-854114298/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								</ul>
 							</section>
 						</section>
@@ -149,7 +235,7 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; Abdelrahman Fouad</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
 
 			</div>
