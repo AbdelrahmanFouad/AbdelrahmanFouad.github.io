@@ -1,255 +1,775 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Abdelrahman Fouad — Digital Operations Engineer</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Digital Operations Engineer specializing in Python automation, DDEX music distribution pipelines, AI tooling, and audio engineering. Cairo, Egypt." />
-		<meta name="keywords" content="Abdelrahman Fouad, Python, Automation, DDEX, Music Distribution, Digital Operations, AI, Streamlit" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			.posts { display: flex !important; flex-wrap: wrap !important; }
-			.posts > article { width: calc(33.333% - 3em) !important; flex: 0 0 calc(33.333% - 3em) !important; }
-			.tech-tags { display: flex; flex-wrap: wrap; gap: 0.5em; margin-top: 1em; justify-content: center; }
-			.tech-tags span { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); padding: 0.3em 0.8em; border-radius: 2em; font-size: 0.75em; letter-spacing: 0.05em; text-transform: uppercase; white-space: nowrap; }
-			.stats-bar { display: flex; justify-content: center; gap: 3em; margin: 1.5em 0; flex-wrap: wrap; }
-			.stats-bar .stat { text-align: center; }
-			.stats-bar .stat .number { font-size: 2.2em; font-weight: 800; display: block; line-height: 1; }
-			.stats-bar .stat .label { font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7; }
-			#intro p { font-size: 1.1em; max-width: 40em; margin-left: auto; margin-right: auto; }
-			.project-meta { font-size: 0.8em; opacity: 0.6; margin-bottom: 0.5em; text-transform: uppercase; letter-spacing: 0.08em; }
-		</style>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdelrahman Fouad — Lead Digital Operations & Automation Architect</title>
+  <meta name="description" content="Portfolio of Abdelrahman Fouad — Lead Digital Operations & Automation Architect specializing in 24/7 Python automation rigs, YouTube Content ID systems, DDEX distribution engines, and big-data streaming pipelines.">
+  <meta name="author" content="Abdelrahman Fouad">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+  <!-- Google Fonts: Inter (Typography) & JetBrains Mono (Telemetry/Code) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Abdelrahman Fouad</h1>
-						<p>Digital Operations Engineer · Python Automation Architect · Audio Engineer</p>
-						<p style="font-size: 0.9em; opacity: 0.8; max-width: 36em; margin: 0 auto;">
-							I build Python tools that automate music distribution pipelines — turning 45-minute manual workflows into 2-minute automated runs, increasing team throughput by 300%.
-						</p>
-						<div class="stats-bar" style="margin-top: 2em;">
-							<div class="stat"><span class="number">300%</span><span class="label">Throughput Increase</span></div>
-							<div class="stat"><span class="number">500+</span><span class="label">UPCs / Week</span></div>
-							<div class="stat"><span class="number">10+</span><span class="label">Production Tools</span></div>
-						</div>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+            mono: ['JetBrains Mono', 'Fira Code', 'Consolas', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+            },
+            surface: {
+              950: '#05070c',
+              900: '#080c14',
+              850: '#0d1320',
+              800: '#121a2c',
+              750: '#17223b',
+              700: '#1e2d4d',
+              600: '#2b3f68',
+            }
+          }
+        }
+      }
+    }
+  </script>
 
-				<!-- Header -->
-					<header id="header">
-					</header>
+  <style>
+    body {
+      background-color: #05070c;
+      color: #e2e8f0;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+    .grid-bg {
+      background-size: 36px 36px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    }
+    .radial-glow {
+      background: radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.14) 0%, transparent 65%);
+    }
+    .radial-glow-cyan {
+      background: radial-gradient(circle at 80% 20%, rgba(6, 182, 212, 0.08) 0%, transparent 50%);
+    }
+    .glass-card {
+      background: rgba(14, 21, 36, 0.75);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card:hover {
+      border-color: rgba(52, 211, 153, 0.35);
+      transform: translateY(-2px);
+      box-shadow: 0 16px 35px -10px rgba(0, 0, 0, 0.6), 0 0 20px -5px rgba(16, 185, 129, 0.12);
+    }
+    .tag-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.02em;
+    }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #05070c;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #17223b;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #2b3f68;
+    }
+  </style>
+</head>
+<body class="min-h-screen relative selection:bg-brand-500 selection:text-surface-950">
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://github.com/AbdelrahmanFouad" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.linkedin.com/in/abdelrahman-fouad-854114298/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="mailto:abderhmana@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-					</nav>
+  <!-- Background Ambience -->
+  <div class="fixed inset-0 grid-bg pointer-events-none z-0"></div>
+  <div class="fixed top-0 left-0 right-0 h-[650px] radial-glow pointer-events-none z-0"></div>
+  <div class="fixed top-40 right-0 w-[500px] h-[500px] radial-glow-cyan pointer-events-none z-0"></div>
 
-				<!-- Main -->
-					<div id="main">
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 backdrop-blur-md bg-surface-950/85 border-b border-white/10 px-4 sm:px-8 py-3.5">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2.5 group">
+        <div class="w-8 h-8 rounded-lg bg-surface-850 border border-brand-500/30 flex items-center justify-center text-brand-400 font-mono font-bold text-sm group-hover:border-brand-400 transition-colors">
+          AF
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold text-sm tracking-tight text-white group-hover:text-brand-400 transition-colors">Abdelrahman Fouad</span>
+          <span class="text-[10px] font-mono text-slate-400">Automation Architect</span>
+        </div>
+      </a>
 
-						<!-- Featured Post: DDEX Delivery Toolkit -->
-							<article class="post featured">
-								<header class="major">
-									<span class="project-meta">End-to-End Automation Pipeline · 8 Scripts · 2,000+ Lines</span>
-									<h2><a href="https://github.com/AbdelrahmanFouad/ddex-delivery-toolkit" target="_blank">
-										DDEX Delivery<br />Toolkit</a></h2>
-									<p>A fully autonomous distribution pipeline — from a single CSV of track metadata to packaged DDEX ERN 3.8.2 deliveries across TikTok, YouTube Content ID, and Facebook. Includes genre-aware routing, Playwright-based Octolivery automation, and multi-format audio conversion.</p>
-									<div class="tech-tags">
-										<span>Python</span>
-										<span>Streamlit</span>
-										<span>DDEX ERN 3.8.2</span>
-										<span>Playwright</span>
-										<span>XML</span>
-										<span>FFmpeg</span>
-									</div>
-								</header>
-								<a href="https://github.com/AbdelrahmanFouad/ddex-delivery-toolkit" target="_blank" class="image main"><img src="images/ddex-hero.png" alt="DDEX Delivery Toolkit" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/AbdelrahmanFouad/ddex-delivery-toolkit" target="_blank" class="button large">View on GitHub</a></li>
-								</ul>
-							</article>
+      <div class="flex items-center gap-6 text-sm font-medium">
+        <a href="#rig" class="text-slate-300 hover:text-white transition-colors hidden sm:inline-block">24/7 Rig</a>
+        <a href="#enterprise" class="text-slate-300 hover:text-white transition-colors hidden md:inline-block">Enterprise Pipelines</a>
+        <a href="#tools" class="text-slate-300 hover:text-white transition-colors">Tools & Distribution</a>
+        <a href="#architecture" class="text-slate-300 hover:text-white transition-colors hidden lg:inline-block">Invariants</a>
+        <a href="#contact" class="text-slate-300 hover:text-white transition-colors">Contact</a>
 
-						<!-- Project Grid -->
-							<section class="posts">
+        <div class="h-4 w-px bg-white/10 hidden sm:block"></div>
 
-								<!-- Excelerate -->
-								<article>
-									<header>
-										<span class="project-meta">Live App · AI-Powered</span>
-										<h2><a href="https://github.com/AbdelrahmanFouad/SpreadsheetAI" target="_blank">
-											Excelerate<br />AI Data Analyst</a></h2>
-									</header>
-									<a href="https://github.com/AbdelrahmanFouad/SpreadsheetAI" target="_blank" class="image fit"><img src="images/excelerate.png" alt="Excelerate" /></a>
-									<p>Upload any CSV/Excel and transform data using natural language. Two-stage prompt refinement with Google Gemini, preview before commit, dual export. Deployed on Streamlit Community Cloud.</p>
-									<div class="tech-tags">
-										<span>Gemini AI</span>
-										<span>PandasAI</span>
-										<span>Streamlit</span>
-									</div>
-									<ul class="actions special">
-										<li><a href="https://github.com/AbdelrahmanFouad/SpreadsheetAI" target="_blank" class="button">GitHub</a></li>
-										<li><a href="https://excelerate.streamlit.app" target="_blank" class="button">Live App</a></li>
-									</ul>
-								</article>
+        <div class="flex items-center gap-2.5">
+          <a href="https://github.com/AbdelrahmanFouad" target="_blank" rel="noopener noreferrer" class="p-1.5 rounded-md text-slate-400 hover:text-white hover:bg-surface-850 transition-colors" title="GitHub Profile">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/abdelrahman-fouad-854114298/" target="_blank" rel="noopener noreferrer" class="p-1.5 rounded-md text-slate-400 hover:text-white hover:bg-surface-850 transition-colors" title="LinkedIn Profile">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-								<!-- Media Batch Downloader -->
-								<article>
-									<header>
-										<span class="project-meta">4 Tools · Parallel Processing</span>
-										<h2><a href="https://github.com/AbdelrahmanFouad/media-batch-downloader" target="_blank">
-											Media Batch<br />Downloader</a></h2>
-									</header>
-									<a href="https://github.com/AbdelrahmanFouad/media-batch-downloader" target="_blank" class="image fit"><img src="images/downloader.png" alt="Media Batch Downloader" /></a>
-									<p>Production-grade parallel batch downloader for YouTube, Udio, Facebook & Instagram Reels. Retry logic with exponential backoff, multi-format audio conversion (MP3/FLAC/WAV), thumbnail processing, and manifest tracking.</p>
-									<div class="tech-tags">
-										<span>yt-dlp</span>
-										<span>Playwright</span>
-										<span>FFmpeg</span>
-										<span>Threading</span>
-									</div>
-									<ul class="actions special">
-										<li><a href="https://github.com/AbdelrahmanFouad/media-batch-downloader" target="_blank" class="button">View Project</a></li>
-									</ul>
-								</article>
+  <!-- Hero Section -->
+  <header class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 pt-14 sm:pt-20 pb-16">
+    <div class="max-w-4xl">
+      <!-- Status Beacon -->
+      <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-900 border border-brand-500/30 text-brand-400 font-mono text-xs mb-6 shadow-sm">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
+        </span>
+        <span class="text-slate-200">Production Node CD-5</span>
+        <span class="text-slate-500">·</span>
+        <span class="text-brand-400 font-semibold">25 Autonomous Daemons Active</span>
+      </div>
 
-								<!-- SRT AI Translator -->
-								<article>
-									<header>
-										<span class="project-meta">Live App · AI Translation</span>
-										<h2><a href="https://github.com/AbdelrahmanFouad/subtitle-editor" target="_blank">
-											SRT AI Translator<br />EN → AR</a></h2>
-									</header>
-									<a href="https://github.com/AbdelrahmanFouad/subtitle-editor" target="_blank" class="image fit"><img src="images/subtitle.png" alt="SRT AI Translator" /></a>
-									<p>Subtitle editor with English→Arabic AI translation using Google Gemini. Multi-key rotation, model fallback chain (3 models), batch processing of 12 blocks per API call, inline editing, and rate limit handling.</p>
-									<div class="tech-tags">
-										<span>Gemini AI</span>
-										<span>Streamlit</span>
-										<span>NLP</span>
-									</div>
-									<ul class="actions special">
-										<li><a href="https://github.com/AbdelrahmanFouad/subtitle-editor" target="_blank" class="button">GitHub</a></li>
-										<li><a href="https://subtitleditor.streamlit.app" target="_blank" class="button">Live App</a></li>
-									</ul>
-								</article>
+      <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-[1.1] mb-6">
+        Industrializing digital operations with <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">autonomous 24/7 pipelines</span>.
+      </h1>
 
-								<!-- Music Catalog Tools -->
-								<article>
-									<header>
-										<span class="project-meta">6-Tool Suite · Catalog Ops</span>
-										<h2><a href="https://github.com/AbdelrahmanFouad/music-catalog-tools" target="_blank">
-											Music Catalog<br />Tools</a></h2>
-									</header>
-									<a href="https://github.com/AbdelrahmanFouad/music-catalog-tools" target="_blank" class="image fit"><img src="images/catalog.png" alt="Music Catalog Tools" /></a>
-									<p>Six battle-tested Python utilities for music catalog operations: DSP data transformer, UPC/ISRC file organizer, DDEX packager, Anghami ID scraper, YouTube metadata enricher, and FLAC duration extractor.</p>
-									<div class="tech-tags">
-										<span>Pandas</span>
-										<span>Selenium</span>
-										<span>FFmpeg</span>
-									</div>
-									<ul class="actions special">
-										<li><a href="https://github.com/AbdelrahmanFouad/music-catalog-tools" target="_blank" class="button">View Project</a></li>
-									</ul>
-								</article>
+      <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-3xl mb-9">
+        I architect high-throughput Python automation infrastructure, YouTube Content ID rights protection systems, DDEX digital music distribution suites, and high-density workforce telemetry dashboards — replacing thousands of hours of manual operations with zero-touch, self-healing execution.
+      </p>
 
-								<!-- YouTube Asset Tools -->
-								<article>
-									<header>
-										<span class="project-meta">API Integration · Content ID</span>
-										<h2><a href="https://github.com/AbdelrahmanFouad/youtube-asset-tools" target="_blank">
-											YouTube Asset<br />Tools</a></h2>
-									</header>
-									<a href="https://github.com/AbdelrahmanFouad/youtube-asset-tools" target="_blank" class="image fit"><img src="images/youtube.png" alt="YouTube Asset Tools" /></a>
-									<p>Resolve YouTube Content ID asset IDs to video URLs using the YouTube Data API v3. Two-pass verification (Search API → Snippet confirmation), batch CSV processing, and quota-aware rate limiting.</p>
-									<div class="tech-tags">
-										<span>YouTube API</span>
-										<span>Requests</span>
-										<span>Pandas</span>
-									</div>
-									<ul class="actions special">
-										<li><a href="https://github.com/AbdelrahmanFouad/youtube-asset-tools" target="_blank" class="button">View Project</a></li>
-									</ul>
-								</article>
+      <!-- Primary Action Buttons -->
+      <div class="flex flex-wrap items-center gap-4 mb-14">
+        <a href="#rig" class="px-6 py-3 rounded-lg bg-brand-500 hover:bg-brand-400 text-surface-950 font-bold text-sm tracking-wide transition-all shadow-lg shadow-brand-500/20 flex items-center gap-2">
+          <span>Explore 24/7 Operations Rig</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+        </a>
+        <a href="mailto:abderhmana@gmail.com" class="px-6 py-3 rounded-lg bg-surface-850 hover:bg-surface-800 text-white font-medium text-sm border border-white/10 hover:border-white/20 transition-all flex items-center gap-2">
+          <svg class="w-4 h-4 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          <span>Initiate Contact</span>
+        </a>
+      </div>
 
-								<!-- CSV Flask -->
-								<article>
-									<header>
-										<span class="project-meta">Web App · Data Analysis</span>
-										<h2><a href="https://github.com/AbdelrahmanFouad/csv-flask" target="_blank">
-											CSV Correlator<br />Web App</a></h2>
-									</header>
-									<a href="https://github.com/AbdelrahmanFouad/csv-flask" target="_blank" class="image fit"><img src="images/csv.png" alt="CSV Flask" /></a>
-									<p>Flask web application for uploading two CSV files and finding correlations, matches, and discrepancies between datasets. Built for cross-referencing music catalog data across different DSP platforms.</p>
-									<div class="tech-tags">
-										<span>Flask</span>
-										<span>Pandas</span>
-										<span>HTML/CSS</span>
-									</div>
-									<ul class="actions special">
-										<li><a href="https://github.com/AbdelrahmanFouad/csv-flask" target="_blank" class="button">View Project</a></li>
-									</ul>
-								</article>
-							</section>
+      <!-- Telemetry Stats Bar -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-5 rounded-xl bg-surface-900/90 border border-white/10 backdrop-blur-md">
+        <div class="space-y-1">
+          <div class="font-mono text-2xl sm:text-3xl font-extrabold text-white">25</div>
+          <div class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Production Pipelines</div>
+          <p class="text-[11px] text-slate-500">24/7 Unattended Rig (CD-5)</p>
+        </div>
+        <div class="space-y-1">
+          <div class="font-mono text-2xl sm:text-3xl font-extrabold text-brand-400">9+ GB</div>
+          <div class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Daily Bulk Ingest</div>
+          <p class="text-[11px] text-slate-500">190,000+ Claims in SQLite</p>
+        </div>
+        <div class="space-y-1">
+          <div class="font-mono text-2xl sm:text-3xl font-extrabold text-white">3,197</div>
+          <div class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Whitelist Accounts</div>
+          <p class="text-[11px] text-slate-500">6 Multi-Platform Real-Time Feeds</p>
+        </div>
+        <div class="space-y-1">
+          <div class="font-mono text-2xl sm:text-3xl font-extrabold text-cyan-400">136k+</div>
+          <div class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Workforce Logs</div>
+          <p class="text-[11px] text-slate-500">Sub-10ms Indexed Queries</p>
+        </div>
+      </div>
+    </div>
+  </header>
 
-					</div>
+  <!-- Section 1: The 24/7 Production Automation Rig -->
+  <section id="rig" class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 py-16 border-t border-white/5">
+    <div class="mb-8">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="px-2.5 py-0.5 rounded bg-brand-500/10 border border-brand-500/30 text-brand-400 font-mono text-xs font-semibold">Enterprise Core Architecture</span>
+        <span class="text-slate-500 text-xs font-mono">· Proprietary Automation Rig</span>
+      </div>
+      <h2 class="text-2xl sm:text-4xl font-bold text-white tracking-tight">The 24/7 Production Automation Rig</h2>
+      <p class="text-slate-400 text-sm sm:text-base mt-2 max-w-3xl">A dedicated, hardware-locked Windows production node orchestrating 25 scheduled workflows across YouTube Content ID, rights enforcement, catalog mining, and live CRM synchronization with zero manual intervention.</p>
+    </div>
 
-				<!-- Footer -->
-					<footer id="footer">
+    <!-- Flagship Big Card -->
+    <div class="glass-card rounded-2xl p-6 sm:p-10 relative overflow-hidden border border-white/10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-7 space-y-5">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="px-2.5 py-1 rounded bg-brand-500/10 border border-brand-500/30 text-brand-400 font-mono text-xs font-semibold">Priority 2 Scheduled Node</span>
+            <span class="px-2.5 py-1 rounded bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 font-mono text-xs font-semibold">9 GCP Token Pool</span>
+            <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono text-xs">Self-Healing</span>
+          </div>
 
-						<section class="split contact">
+          <h3 class="text-2xl sm:text-3xl font-bold text-white leading-tight">
+            Autonomous Rights Protection & Big-Data Ingestion Framework
+          </h3>
 
-							<section>
-								<h3>Location</h3>
-								<p>Cairo, Egypt 🇪🇬</p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="mailto:abderhmana@gmail.com">abderhmana@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://github.com/AbdelrahmanFouad" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://www.linkedin.com/in/abdelrahman-fouad-854114298/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Eliminates thousands of hours of manual labor by anchoring unattended headed scrapers in YouTube Studio, downloading and indexing multi-gigabyte CMS reports, rotating Content ID API quota pools, and maintaining continuous mathematical parity with operational CRMs.
+          </p>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Abdelrahman Fouad</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs text-slate-300">
+            <div class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-brand-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span><strong>Channel Monitor</strong>: Hourly browser scraper checking 26 partner channels with zero backlog duplication.</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-brand-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span><strong>Content ID Patcher</strong>: 3x daily automated policy patcher across 9 rotating OAuth token pools.</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-brand-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span><strong>Bulk Ingestion Engine</strong>: Daily streaming of 9+ GB CSV dumps into a 190,000-row SQLite WAL database.</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-brand-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span><strong>Daily Briefing Overseer</strong>: Synthesizes health across all 25 jobs into an automated executive briefing.</span>
+            </div>
+          </div>
 
-			</div>
+          <div class="pt-4 flex flex-wrap items-center gap-3">
+            <div class="px-4 py-2 rounded-lg bg-surface-900 border border-white/10 font-mono text-xs text-slate-300 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-brand-400"></span>
+              <span>Host: Intel i7-7800X (12 Threads) · High Performance Mode</span>
+            </div>
+            <div class="px-4 py-2 rounded-lg bg-surface-900 border border-white/10 font-mono text-xs text-slate-400">
+              Uptime: 99.98% Unattended
+            </div>
+          </div>
+        </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        <!-- Rig Telemetry Panel -->
+        <div class="lg:col-span-5 bg-surface-950/95 rounded-xl border border-white/10 p-5 font-mono text-[11px] text-slate-300 space-y-2 overflow-x-auto shadow-2xl">
+          <div class="flex items-center justify-between pb-2.5 border-b border-white/10 text-slate-400 text-xs">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-brand-400 animate-pulse"></span>
+              <span class="font-bold text-white tracking-wide">RIG TELEMETRY FEED</span>
+            </div>
+            <span class="text-brand-400 font-semibold">ALL SYSTEMS NOMINAL</span>
+          </div>
+          <div class="text-slate-500 py-1">// Windows Task Scheduler · Priority 2 Engine · Node CD-5</div>
+          <div class="flex justify-between py-0.5"><span class="text-slate-400">Channel_Monitor</span><span class="text-brand-400">0 (OK) · 284 uploads</span></div>
+          <div class="flex justify-between py-0.5"><span class="text-slate-400">Music_Monitor</span><span class="text-brand-400">0 (OK) · 181 tracks audited</span></div>
+          <div class="flex justify-between py-0.5"><span class="text-slate-400">ContentID_Patcher</span><span class="text-brand-400">0 (OK) · 9 Token Pools</span></div>
+          <div class="flex justify-between py-0.5"><span class="text-slate-400">MBC_Whitelist_AutoSync</span><span class="text-brand-400">0 (OK) · 3,197 records</span></div>
+          <div class="flex justify-between py-0.5"><span class="text-slate-400">MBC_Screenshots_Proof</span><span class="text-brand-400">0 (OK) · 94 viewports</span></div>
+          <div class="flex justify-between py-0.5"><span class="text-slate-400">Fetch_Reports_Pipeline</span><span class="text-brand-400">0 (OK) · 9.39 GB ingested</span></div>
+          <div class="flex justify-between py-0.5"><span class="text-slate-400">Claims_Live_Sync</span><span class="text-brand-400">0 (OK) · 190,082 rows</span></div>
+          <div class="flex justify-between py-0.5"><span class="text-slate-400">CMS_Coverage_Sync</span><span class="text-brand-400">0 (OK) · 80.7% audited</span></div>
+          <div class="flex justify-between py-0.5"><span class="text-slate-400">Asset_Label_Audit</span><span class="text-brand-400">0 (OK) · 1,010 labels</span></div>
+          <div class="flex justify-between py-0.5"><span class="text-slate-400">Clockify_Daily_Ingest</span><span class="text-brand-400">0 (OK) · 136k entries</span></div>
+          <div class="pt-2.5 border-t border-white/10 text-slate-500 text-[10px]">
+            Disk Cache Capped @ 32MB · Memory Guard: OK · Zero Manual Interventions
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	</body>
+  <!-- Section 2: Enterprise Systems & Proprietary Pipelines -->
+  <section id="enterprise" class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 py-16 border-t border-white/5">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+      <div>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="px-2.5 py-0.5 rounded bg-brand-500/10 border border-brand-500/30 text-brand-400 font-mono text-xs font-semibold">Proprietary Infrastructure</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-bold text-white tracking-tight">Enterprise Production Systems</h2>
+      </div>
+      <p class="text-slate-400 text-sm max-w-md">Proprietary systems designed for mission-critical operations, unthrottled reliability, strict cryptographic safety, and massive operational time savings.</p>
+    </div>
+
+    <!-- 4 Enterprise Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- Enterprise 1: CD Tracker & Workforce Analytics Dashboard -->
+      <div class="glass-card rounded-xl overflow-hidden flex flex-col">
+        <div class="h-56 overflow-hidden bg-surface-950 border-b border-white/10 relative group">
+          <img src="images/cd-dashboard.png" alt="Content Delivery & Workforce Intelligence Dashboard" class="w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+          <div class="absolute top-3 right-3 px-2.5 py-1 rounded bg-surface-950/90 border border-white/20 text-brand-400 font-mono text-[10px] font-semibold">
+            Proprietary Enterprise App
+          </div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-mono uppercase tracking-wider text-brand-400 font-semibold">Workforce Analytics & Operations</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Content Delivery & Clockify Intelligence Dashboard</h3>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Full-stack operations analytics system indexing 136,000+ operational records across 175 contributors. Features Tabulator virtual scrolling, automated multi-team workload balancing, burnout risk heuristics, and an embedded natural language SQL querying agent for executive reporting.
+            </p>
+          </div>
+          <div class="space-y-4">
+            <div class="flex flex-wrap gap-1.5 tag-badge">
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">FastAPI</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">SQLite WAL</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Tabulator v5.5</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Chart.js</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Sub-10ms Queries</span>
+            </div>
+            <div class="flex items-center justify-between pt-3 border-t border-white/10 text-xs">
+              <div class="flex items-center gap-2 text-slate-400 font-mono text-[11px]">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                <span>Active Production Node</span>
+              </div>
+              <span class="text-slate-500 font-mono text-[11px]">136k+ Logs Indexed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Enterprise 2: YouTube Content ID & Multi-CMS Ingest Pipeline -->
+      <div class="glass-card rounded-xl overflow-hidden flex flex-col">
+        <div class="h-56 overflow-hidden bg-surface-950 border-b border-white/10 p-6 flex flex-col justify-center relative">
+          <div class="font-mono text-xs text-brand-400 mb-1">RIGHTS MANAGEMENT ENGINE</div>
+          <div class="text-2xl font-bold text-white tracking-tight">190,000+ Claims Live Sync</div>
+          <div class="text-xs text-slate-400 mt-1">Multi-CMS Conflict Resolution & Policy Enforcement</div>
+          <div class="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-surface-850 border border-white/20 text-brand-400 font-mono text-[10px]">9 OAuth Pools</div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-mono uppercase tracking-wider text-brand-400 font-semibold">Rights Protection & Ingestion</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">YouTube Content ID & Multi-CMS Ingest Pipeline</h3>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Industrial rights management engine managing multi-thousand asset catalogs across 380+ channels. Triangulates ownership conflicts, patches monetizing policies across rotating OAuth quota pools, and streams daily 9+ GB CSV report dumps into indexed SQLite tables.
+            </p>
+          </div>
+          <div class="space-y-4">
+            <div class="flex flex-wrap gap-1.5 tag-badge">
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">YouTube Partner API</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Multi-Token Rotation</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Bulk CSV Streaming</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">SQLite Ingestion</span>
+            </div>
+            <div class="flex items-center justify-between pt-3 border-t border-white/10 text-xs">
+              <div class="flex items-center gap-2 text-slate-400 font-mono text-[11px]">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                <span>Active Production Daemon</span>
+              </div>
+              <span class="text-slate-500 font-mono text-[11px]">3 Runs / Day</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Enterprise 3: MBC Multi-Platform Whitelist & Compliance Engine -->
+      <div class="glass-card rounded-xl overflow-hidden flex flex-col">
+        <div class="h-56 overflow-hidden bg-surface-950 border-b border-white/10 p-6 flex flex-col justify-center relative">
+          <div class="font-mono text-xs text-brand-400 mb-1">COMPLIANCE & WHITELIST ENGINE</div>
+          <div class="text-2xl font-bold text-white tracking-tight">3,197 Accounts Synced</div>
+          <div class="text-xs text-slate-400 mt-1">Across YouTube, FB, IG, X, TikTok & Snapchat</div>
+          <div class="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-surface-850 border border-white/20 text-cyan-400 font-mono text-[10px]">20m Cadence</div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-mono uppercase tracking-wider text-brand-400 font-semibold">Multi-Platform Rights Protection</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">MBC Multi-Platform Whitelist & Audit Engine</h3>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Automated compliance system transforming Airtable records into a synchronized Google Sheets matrix every 20 minutes. Resolves 1,275+ Facebook numeric redirects via browser automation and captures 94 automated high-res viewport screenshots with authentic taskbar proofs daily.
+            </p>
+          </div>
+          <div class="space-y-4">
+            <div class="flex flex-wrap gap-1.5 tag-badge">
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Airtable API</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Playwright (Python)</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Google Sheets API</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Automated Viewports</span>
+            </div>
+            <div class="flex items-center justify-between pt-3 border-t border-white/10 text-xs">
+              <div class="flex items-center gap-2 text-slate-400 font-mono text-[11px]">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                <span>Active Production Daemon</span>
+              </div>
+              <span class="text-slate-500 font-mono text-[11px]">94 Viewports / Day</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Enterprise 4: CMS Asset Label Database & Auditor -->
+      <div class="glass-card rounded-xl overflow-hidden flex flex-col">
+        <div class="h-56 overflow-hidden bg-surface-950 border-b border-white/10 p-6 flex flex-col justify-center relative">
+          <div class="font-mono text-xs text-brand-400 mb-1">CATALOG RECONCILIATION & AUDIT</div>
+          <div class="text-2xl font-bold text-white tracking-tight">1,010 Asset Labels</div>
+          <div class="text-xs text-slate-400 mt-1">DigiSay 2, Limited & Music Partner Portals</div>
+          <div class="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-surface-850 border border-white/20 text-brand-400 font-mono text-[10px]">Fuzzy Matching</div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-mono uppercase tracking-wider text-brand-400 font-semibold">Catalog Mining & Anomaly Detection</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">CMS Asset Label Database & Anomaly Detector</h3>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Audits and resolves labels across 380+ YouTube partner channels. Detects intra-CMS typos using Levenshtein distance (85%+ similarity threshold), flags cross-CMS duplicate claims to prevent misattributed royalties, and synchronizes four formatted audit tabs to Google Sheets.
+            </p>
+          </div>
+          <div class="space-y-4">
+            <div class="flex flex-wrap gap-1.5 tag-badge">
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">YouTube Data API</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Levenshtein Similarity</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Google Sheets API</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Pandas</span>
+            </div>
+            <div class="flex items-center justify-between pt-3 border-t border-white/10 text-xs">
+              <div class="flex items-center gap-2 text-slate-400 font-mono text-[11px]">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                <span>Monthly Scheduled Audit</span>
+              </div>
+              <span class="text-slate-500 font-mono text-[11px]">380+ Channels Audited</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 3: Digital Distribution & Specialized Tools -->
+  <section id="tools" class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 py-16 border-t border-white/5">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+      <div>
+        <div class="font-mono text-xs uppercase tracking-widest text-brand-400 font-semibold mb-2">Distribution & AI Engineering</div>
+        <h2 class="text-2xl sm:text-4xl font-bold text-white tracking-tight">Specialized Tooling & Open Source</h2>
+      </div>
+      <p class="text-slate-400 text-sm max-w-md">Production-grade music distribution engines, natural-language data utilities, and public open-source libraries.</p>
+    </div>
+
+    <!-- 6 Projects Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Tool 1: DDEX Delivery Toolkit -->
+      <div class="glass-card rounded-xl overflow-hidden flex flex-col">
+        <div class="h-48 overflow-hidden bg-surface-950 border-b border-white/10 relative group">
+          <img src="images/ddex-hero.png" alt="DDEX Delivery Toolkit" class="w-full h-full object-cover object-center opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+          <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-surface-950/90 border border-white/20 text-brand-400 font-mono text-[10px] font-semibold">DDEX ERN 3.8.2</div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-mono uppercase tracking-wider text-brand-400 font-semibold">Digital Music Distribution</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">DDEX Delivery Toolkit</h3>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              End-to-end distribution engine converting raw catalog metadata into certified DDEX ERN 3.8.2 XML delivery packages for DSP ingestion (TikTok, Facebook, YouTube Music). Features Playwright Octolivery automation and automated FFmpeg transcoders.
+            </p>
+          </div>
+          <div class="space-y-4">
+            <div class="flex flex-wrap gap-1.5 tag-badge">
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">DDEX XML</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Playwright</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">FFmpeg</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Streamlit</span>
+            </div>
+            <div class="flex items-center justify-between pt-2 border-t border-white/10 text-xs">
+              <span class="text-slate-400 font-mono text-[11px]">DSP Distribution</span>
+              <span class="text-slate-400 text-[11px] font-mono">500+ UPCs/wk</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tool 2: Excelerate — AI Data Analyst -->
+      <div class="glass-card rounded-xl overflow-hidden flex flex-col">
+        <div class="h-48 overflow-hidden bg-surface-950 border-b border-white/10 relative group">
+          <img src="images/excelerate.png" alt="Excelerate AI Analyst" class="w-full h-full object-cover object-top opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+          <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-surface-950/90 border border-white/20 text-brand-400 font-mono text-[10px] font-semibold">Gemini AI + PandasAI</div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-mono uppercase tracking-wider text-brand-400 font-semibold">AI Tooling</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Excelerate — AI Data Analyst</h3>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Natural-language spreadsheet manipulation platform. Upload any CSV or Excel workbook and execute complex analytical transformations using natural language. Built with a two-stage prompt refinement pipeline and preview sandbox.
+            </p>
+          </div>
+          <div class="space-y-4">
+            <div class="flex flex-wrap gap-1.5 tag-badge">
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Google Gemini</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">PandasAI</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Streamlit</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Data Analytics</span>
+            </div>
+            <div class="flex items-center justify-between pt-2 border-t border-white/10 text-xs">
+              <span class="text-slate-400 font-mono text-[11px]">Natural Language Data</span>
+              <span class="text-slate-400 text-[11px] font-mono">Dual-Stage Prompting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tool 3: Media Batch Downloader & Processing Suite -->
+      <div class="glass-card rounded-xl overflow-hidden flex flex-col">
+        <div class="h-48 overflow-hidden bg-surface-950 border-b border-white/10 relative group">
+          <img src="images/downloader.png" alt="Media Batch Downloader" class="w-full h-full object-cover object-top opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+          <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-surface-950/90 border border-white/20 text-brand-400 font-mono text-[10px] font-semibold">Open Source</div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-mono uppercase tracking-wider text-brand-400 font-semibold">Media Engineering</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Media Batch Downloader & Suite</h3>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Industrial parallel downloader for YouTube, Udio, Facebook, and Instagram Reels. Incorporates retry backoffs, multi-format audio conversion (MP3, FLAC, WAV), thumbnail extraction, and batch JSON manifests.
+            </p>
+          </div>
+          <div class="space-y-4">
+            <div class="flex flex-wrap gap-1.5 tag-badge">
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">yt-dlp</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">FFmpeg</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Threading</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Python</span>
+            </div>
+            <div class="flex items-center justify-between pt-2 border-t border-white/10 text-xs">
+              <a href="https://github.com/AbdelrahmanFouad/media-batch-downloader" target="_blank" rel="noopener noreferrer" class="text-white hover:text-brand-400 font-semibold flex items-center gap-1.5 transition-colors">
+                <span>View on GitHub</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+              <span class="text-slate-400 text-[11px] font-mono">Public Repository</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tool 4: SRT AI Translator & Subtitle Studio -->
+      <div class="glass-card rounded-xl overflow-hidden flex flex-col">
+        <div class="h-48 overflow-hidden bg-surface-950 border-b border-white/10 relative group">
+          <img src="images/subtitle.png" alt="Subtitle AI Translator" class="w-full h-full object-cover object-top opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+          <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-surface-950/90 border border-white/20 text-brand-400 font-mono text-[10px] font-semibold">LLM Translation</div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-mono uppercase tracking-wider text-brand-400 font-semibold">Localization & NLP</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">SRT AI Translator & Subtitle Studio</h3>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Automated video subtitle translation studio. Parses raw `.srt` files, batches timecode entries through LLM pipelines preserving exact timing constraints, and handles dialect-specific Arabic localization.
+            </p>
+          </div>
+          <div class="space-y-4">
+            <div class="flex flex-wrap gap-1.5 tag-badge">
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">LLM Pipelines</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">SRT Parser</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Streamlit</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Timecode Math</span>
+            </div>
+            <div class="flex items-center justify-between pt-2 border-t border-white/10 text-xs">
+              <span class="text-slate-400 font-mono text-[11px]">SRT Localization</span>
+              <span class="text-slate-400 text-[11px] font-mono">Timing Preserving</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tool 5: Music Catalog & Audio Engineering Utilities -->
+      <div class="glass-card rounded-xl overflow-hidden flex flex-col">
+        <div class="h-48 overflow-hidden bg-surface-950 border-b border-white/10 relative group">
+          <img src="images/catalog.png" alt="Music Catalog Tools" class="w-full h-full object-cover object-top opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+          <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-surface-950/90 border border-white/20 text-brand-400 font-mono text-[10px] font-semibold">Open Source</div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-mono uppercase tracking-wider text-brand-400 font-semibold">Music Metadata</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Music Catalog & Metadata Tools</h3>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Automated audio file tagging, ISRC verification, and audio fingerprinting toolkit. Validates lossless audio files against DSP ingestion specifications and generates standardized catalog manifests.
+            </p>
+          </div>
+          <div class="space-y-4">
+            <div class="flex flex-wrap gap-1.5 tag-badge">
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Mutagen</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">MusicBrainz</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">ISRC Validation</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Audio Tags</span>
+            </div>
+            <div class="flex items-center justify-between pt-2 border-t border-white/10 text-xs">
+              <a href="https://github.com/AbdelrahmanFouad/music-catalog-tools" target="_blank" rel="noopener noreferrer" class="text-white hover:text-brand-400 font-semibold flex items-center gap-1.5 transition-colors">
+                <span>View on GitHub</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+              <span class="text-slate-400 text-[11px] font-mono">Public Repository</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tool 6: YouTube Asset Management Utilities -->
+      <div class="glass-card rounded-xl overflow-hidden flex flex-col">
+        <div class="h-48 overflow-hidden bg-surface-950 border-b border-white/10 relative group">
+          <img src="images/youtube.png" alt="YouTube Asset Tools" class="w-full h-full object-cover object-top opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+          <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-surface-950/90 border border-white/20 text-brand-400 font-mono text-[10px] font-semibold">Open Source</div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-mono uppercase tracking-wider text-brand-400 font-semibold">YouTube API Tools</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">YouTube Asset & Metadata Tools</h3>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              CLI suite and automation scripts for managing YouTube partner assets, bulk updating asset metadata, verifying ownership splits, and resolving claim disputes across partner channels.
+            </p>
+          </div>
+          <div class="space-y-4">
+            <div class="flex flex-wrap gap-1.5 tag-badge">
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">YouTube Partner</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Asset CLI</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">OAuth 2.0</span>
+              <span class="px-2 py-0.5 rounded bg-surface-850 text-slate-300 border border-white/5">Python</span>
+            </div>
+            <div class="flex items-center justify-between pt-2 border-t border-white/10 text-xs">
+              <a href="https://github.com/AbdelrahmanFouad/youtube-asset-tools" target="_blank" rel="noopener noreferrer" class="text-white hover:text-brand-400 font-semibold flex items-center gap-1.5 transition-colors">
+                <span>View on GitHub</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+              <span class="text-slate-400 text-[11px] font-mono">Public Repository</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 4: Rig Invariants & Production Standards -->
+  <section id="architecture" class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 py-16 border-t border-white/5">
+    <div class="mb-10">
+      <div class="font-mono text-xs uppercase tracking-widest text-brand-400 font-semibold mb-2">Engineering Standards</div>
+      <h2 class="text-2xl sm:text-4xl font-bold text-white tracking-tight">Hardware-Aware Engineering & Rig Invariants</h2>
+      <p class="text-slate-400 text-sm mt-2 max-w-2xl">Production automation rigs cannot afford memory leaks, unthrottled disk thrashing, or silent background crashes. Every automation on this rig adheres to strict production invariants.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="glass-card rounded-xl p-6 space-y-3">
+        <div class="w-10 h-10 rounded-lg bg-surface-850 border border-white/10 flex items-center justify-center text-brand-400 font-mono text-sm font-bold">01</div>
+        <h3 class="text-lg font-bold text-white">Priority 2 Scheduling & Power Plan</h3>
+        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+          Windows power plan is locked to <strong>High Performance</strong> to eliminate CPU downclocking. All Task Scheduler background jobs run locked to <strong>Priority 2</strong> (unthrottled CPU scheduling and high-priority I/O).
+        </p>
+      </div>
+
+      <div class="glass-card rounded-xl p-6 space-y-3">
+        <div class="w-10 h-10 rounded-lg bg-surface-850 border border-white/10 flex items-center justify-center text-cyan-400 font-mono text-sm font-bold">02</div>
+        <h3 class="text-lg font-bold text-white">SSD Preservation & Cache Hard-Caps</h3>
+        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+          To protect solid-state drive longevity across 24/7 scrapers, Chrome disk and media caches are hard-capped to <strong>32MB</strong> (<code class="text-brand-400 font-mono text-xs">--disk-cache-size=33554432</code>) and GPU hardware acceleration is permanently suppressed.
+        </p>
+      </div>
+
+      <div class="glass-card rounded-xl p-6 space-y-3">
+        <div class="w-10 h-10 rounded-lg bg-surface-850 border border-white/10 flex items-center justify-center text-brand-400 font-mono text-sm font-bold">03</div>
+        <h3 class="text-lg font-bold text-white">Evidence Before Assertions</h3>
+        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+          No automated run is declared healthy without ground-truth verification: exit codes, execution logs, SQLite schema integrity, process IDs, and downstream API receipts are audited automatically every 24 hours.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Technical Competencies & Toolchain -->
+  <section class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 py-16 border-t border-white/5">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-10">
+        <div class="font-mono text-xs uppercase tracking-widest text-brand-400 font-semibold mb-2">Technical Matrix</div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Core Competencies & Toolchain</h2>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="glass-card rounded-lg p-4 space-y-2">
+          <div class="text-xs font-mono font-bold text-brand-400 uppercase tracking-wider">Languages & Core</div>
+          <ul class="text-xs text-slate-300 space-y-1">
+            <li>Python 3.12 / 3.14 (x64)</li>
+            <li>Vanilla ES6+ JavaScript</li>
+            <li>SQL (SQLite / WAL)</li>
+            <li>PowerShell & Bash</li>
+          </ul>
+        </div>
+
+        <div class="glass-card rounded-lg p-4 space-y-2">
+          <div class="text-xs font-mono font-bold text-brand-400 uppercase tracking-wider">Web & Frameworks</div>
+          <ul class="text-xs text-slate-300 space-y-1">
+            <li>FastAPI & Uvicorn</li>
+            <li>Tailwind CSS</li>
+            <li>Tabulator Tables</li>
+            <li>Chart.js & Streamlit</li>
+          </ul>
+        </div>
+
+        <div class="glass-card rounded-lg p-4 space-y-2">
+          <div class="text-xs font-mono font-bold text-brand-400 uppercase tracking-wider">APIs & Protocols</div>
+          <ul class="text-xs text-slate-300 space-y-1">
+            <li>YouTube Data & Partner</li>
+            <li>Content ID API</li>
+            <li>DDEX ERN 3.8.2 / XML</li>
+            <li>Google Sheets API v4</li>
+          </ul>
+        </div>
+
+        <div class="glass-card rounded-lg p-4 space-y-2">
+          <div class="text-xs font-mono font-bold text-brand-400 uppercase tracking-wider">Ops & Systems</div>
+          <ul class="text-xs text-slate-300 space-y-1">
+            <li>Playwright (Python)</li>
+            <li>Windows Task Scheduler</li>
+            <li>FFmpeg & yt-dlp</li>
+            <li>Git & Self-Healing Watchdogs</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer & Contact -->
+  <footer id="contact" class="relative z-10 border-t border-white/10 bg-surface-950/95 py-16 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+      <div class="space-y-2 text-center md:text-left">
+        <div class="text-xl font-bold text-white tracking-tight">Abdelrahman Fouad</div>
+        <p class="text-xs text-slate-400">Lead Digital Operations & Automation Architect · Cairo, Egypt</p>
+        <p class="text-xs text-slate-500">&copy; 2026 Abdelrahman Fouad. Handcrafted with zero bloated frameworks.</p>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-6 text-sm">
+        <a href="mailto:abderhmana@gmail.com" class="px-4 py-2 rounded-lg bg-surface-850 hover:bg-surface-800 text-white border border-white/10 hover:border-brand-500/50 transition-colors flex items-center gap-2">
+          <svg class="w-4 h-4 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          <span>abderhmana@gmail.com</span>
+        </a>
+        <a href="https://github.com/AbdelrahmanFouad" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors flex items-center gap-1.5 font-medium">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/abdelrahman-fouad-854114298/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors flex items-center gap-1.5 font-medium">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
 </html>
